@@ -1,0 +1,39 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/text"
+            android:textColor="@color/black"
+            android:background="@color/purple_500"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+       <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/Message"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="text"
+           tools:ignore="MissingConstraints" />
+
+       <Button
+           android:id="@+id/SendMsgBtn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Send"
+           tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Kafka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kafka"
+        tools:ignore="MissingConstraints" />
+
+</LinearLayout>

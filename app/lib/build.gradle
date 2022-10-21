@@ -1,0 +1,26 @@
+plugins {
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+}
+
+
+dependencies {
+
+    //kafka(Don't update may cause problem)
+    implementation 'jms:jms:1.1'
+    implementation 'com.squarespace.jersey2-guice:0-jersey2-guice-spi:1.0.6'
+
+    implementation 'org.apache.kafka:kafka_2.8.2:0.8.1'
+
+    //databind
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.9.8")
+
+    //json
+    implementation('org.json:json:20220924')
+
+}
